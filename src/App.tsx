@@ -3,7 +3,8 @@ import "bootstrap/dist/css/bootstrap.css";
 import { Routes, Route, NavLink } from "react-router-dom";
 import AboutPage from "./pages/AboutPage";
 import HomePage from "./pages/HomePage";
-import DiscoverPage from "./pages/PokemonDiscoveryPage";
+import PokemonDiscoveryPage from "./pages/PokemonDiscoveryPage";
+import PokemonList from "./pages/PokemonList";
 
 function App() {
   return (
@@ -12,10 +13,10 @@ function App() {
         <h1>Navbar</h1>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/about">About</NavLink>
-        <NavLink to="/discover">Discover</NavLink>
+        <NavLink to="/list">List</NavLink>
       </div>
       <Routes>
-        <Route path="/discover" element={<DiscoverPage />} />
+        <Route path="/list" element={<PokemonList />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/" element={<HomePage />} />
       </Routes>

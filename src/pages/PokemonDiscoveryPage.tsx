@@ -1,7 +1,7 @@
 import React from "react";
 
 export type Pokemon = {
-  id: number;
+  //id: number;
   name: string;
   url: string;
 };
@@ -10,13 +10,13 @@ type Props = {
   pokemon: Pokemon;
 };
 
-const DiscoverPage = ({ pokemon }: Props) => {
+const PokemonDiscoveryPage = ({ pokemon }: Props) => {
   return (
     <div className="Pokemon">
       <h2>{pokemon.name}</h2>
-      <p>{pokemon.id}</p>
+      <p>{pokemon.url}</p>
     </div>
   );
 };
 
-export default DiscoverPage;
+export default PokemonDiscoveryPage;
