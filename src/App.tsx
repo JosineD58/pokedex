@@ -9,7 +9,7 @@ import PokemonDetailPage from "./pages/PokemonDetailPage";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container">
       <div className="nav">
         <h1>Navbar</h1>
         <NavLink to="/">Home</NavLink>

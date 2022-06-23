@@ -8,6 +8,7 @@ type pokemonProps = {
 
 const PokemonList = () => {
   const [pokemon, setPokemon] = useState<Pokemon[]>();
+  const [filter, setFilter] = useState("");
 
   useEffect(() => {
     const doSomeDataFetching = async () => {
@@ -28,14 +29,26 @@ const PokemonList = () => {
 
   return (
     <div>
-      <h1>A list of Pokemon:</h1>
-      {pokemon ? (
-        pokemon.map((pokeObj) => {
-          return <PokemonDiscoveryPage pokemon={pokeObj} />;
-        })
-      ) : (
-        <p>Loading Pokemon...</p>
-      )}
+      <p>
+        Search Pokemon:{" "}
+        <input
+          type="text"
+          value={filter}
+          onChange={(event) => setFilter(event.target.value)}
+        />
+      </p>
+      <div>
+        <h1>A list of Pokemon:</h1>
+        {pokemon ? (
+          pokemon
+            .filter((pokeObj) => pokeObj.name.startsWith(filter))
+            .map((pokeObj) => {
+              return <PokemonDiscoveryPage pokemon={pokeObj} />;
+            })
+        ) : (
+          <p>Loading Pokemon...</p>
+        )}
+      </div>
     </div>
   );
 };
