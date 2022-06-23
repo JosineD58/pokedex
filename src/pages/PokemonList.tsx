@@ -3,9 +3,7 @@ import PokemonDiscoveryPage, { Pokemon } from "./PokemonDiscoveryPage";
 import axios from "axios";
 
 type pokemonProps = {
-  //id: number;
   name: string;
-  url: string;
 };
 
 const PokemonList = () => {
@@ -20,9 +18,7 @@ const PokemonList = () => {
       setPokemon(
         res.data.results.map((pokemonProps: pokemonProps) => {
           return {
-            //id: pokemonProps.id,
             name: pokemonProps.name,
-            url: pokemonProps.url,
           };
         })
       );
