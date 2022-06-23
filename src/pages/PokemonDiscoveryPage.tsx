@@ -18,3 +18,5 @@ const PokemonDiscoveryPage = ({ pokemon }: Props) => {
     </div>
   );
 };
+
+export default PokemonDiscoveryPage;
