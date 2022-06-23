@@ -29,7 +29,7 @@ const PokemonList = () => {
 
   return (
     <div>
-      <p>
+      <p className="search">
         Search Pokemon:{" "}
         <input
           type="text"
@@ -38,7 +38,7 @@ const PokemonList = () => {
         />
       </p>
       <div>
-        <h1>A list of Pokemon:</h1>
+        <h1 className="titlePokedex">Pokedex:</h1>
         {pokemon ? (
           pokemon
             .filter((pokeObj) => pokeObj.name.startsWith(filter))

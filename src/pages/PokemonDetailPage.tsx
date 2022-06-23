@@ -44,8 +44,8 @@ function PokemonDetailPage() {
   }, []);
 
   return pokemonDetails ? (
-    <div>
-      <h2>{pokemonDetails.name}</h2>
+    <div className="pokemonCard">
+      <h2 className="pokemonName">{pokemonDetails.name}</h2>
       <img src={pokemonDetails.sprites.front_default} alt="front sprite" />
       <p>
         Types:{" "}
