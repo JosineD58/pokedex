@@ -10,12 +10,15 @@ import PokemonDetailPage from "./pages/PokemonDetailPage";
 function App() {
   return (
     <div className="App container">
-      <div className="nav">
-        <h1>Navbar</h1>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/list">List</NavLink>
-      </div>
+      <nav className="navbar">
+        <div className="container-fluid">
+          <NavLink className="nav-link" to="/">
+            Home
+          </NavLink>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/list">List</NavLink>
+        </div>
+      </nav>
       <Routes>
         <Route path="/list" element={<PokemonList />} />
         <Route path="/about" element={<AboutPage />} />
