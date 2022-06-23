@@ -28,10 +28,10 @@ const PokemonList = () => {
 
   return (
     <div>
-      <p>A list of Pokemon:</p>
+      <h1>A list of Pokemon:</h1>
       {pokemon ? (
-        pokemon.map((pokemon) => {
-          return <PokemonDiscoveryPage pokemon={pokemon} />;
+        pokemon.map((pokeObj) => {
+          return <PokemonDiscoveryPage pokemon={pokeObj} />;
         })
       ) : (
         <p>Loading Pokemon...</p>
