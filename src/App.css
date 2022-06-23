@@ -38,6 +38,14 @@
 }
 
 .navbar {
-  border: solid 2px gray; 
+  border: solid 3px #043d73; 
   border-radius: 5px; 
+  background-color: #F2C4CE;
+}
+
+.nav-link {
+  border: solid 2px #043d73; 
+  border-radius: 5px; 
+  color: white; 
+ 
 }

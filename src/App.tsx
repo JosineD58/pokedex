@@ -15,8 +15,12 @@ function App() {
           <NavLink className="nav-link" to="/">
             Home
           </NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/list">List</NavLink>
+          <NavLink className="nav-link" to="/about">
+            About
+          </NavLink>
+          <NavLink className="nav-link" to="/list">
+            List
+          </NavLink>
         </div>
       </nav>
       <Routes>
