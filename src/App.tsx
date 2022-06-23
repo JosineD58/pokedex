@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import { Routes, Route } from "react-router-dom";
 import AboutPage from "./pages/AboutPage";
 import HomePage from "./pages/HomePage";
+import DiscoverPage from "./pages/DiscoverPage";
 
 function App() {
   return (
