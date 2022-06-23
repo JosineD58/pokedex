@@ -7,6 +7,15 @@ type pokemonSprites = {
   front_default: string;
 };
 
+type PokemonType = {
+  name: string;
+  url: string;
+};
+
+type PokemonTypes = {
+  slot: number;
+  type: PokemonType;
+};
 type pokemonDetailProps = {
   name: string;
   order: number;
@@ -15,9 +24,8 @@ type pokemonDetailProps = {
   base_experience: number;
   height: number;
   weight: number;
-  types: string;
   sprites: pokemonSprites;
-  typeObj: string;
+  types: PokemonTypes[];
 };
 
 function PokemonDetailPage() {
@@ -39,12 +47,12 @@ function PokemonDetailPage() {
     <div>
       <h2>{pokemonDetails.name}</h2>
       <img src={pokemonDetails.sprites.front_default} alt="front sprite" />
-      {/* <p>
+      <p>
         Types:{" "}
-        { {pokemonDetails.types.map((typeObj) => (
+        {pokemonDetails.types.map((typeObj) => (
           <span>{typeObj.type.name} </span>
-        ))} }
-      </p> */}
+        ))}
+      </p>
       <p>Weight: {pokemonDetails.weight} hectograms</p>
     </div>
   ) : (
