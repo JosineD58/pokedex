@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import { Routes, Route, NavLink } from "react-router-dom";
 import AboutPage from "./pages/AboutPage";
 import HomePage from "./pages/HomePage";
-import DiscoverPage from "./pages/DiscoverPage";
+import DiscoverPage from "./pages/PokemonDiscoveryPage";
 
 function App() {
   return (
