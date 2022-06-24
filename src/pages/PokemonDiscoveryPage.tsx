@@ -14,10 +14,18 @@ const PokemonDiscoveryPage = ({ pokemon }: Props) => {
   return (
     <div className="pokemonDiscoverCard">
       <div className="pokemonDiscovery">
-        <h2 className="pokemonListName">{pokemon.name}</h2>
-        <NavLink className="pokemonSeeMore" to={`/details/${pokemon.name}`}>
-          see more
-        </NavLink>
+        <Card style={{ width: "18rem" }}>
+          <Card.Img
+            variant="top"
+            src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/035.png"
+          />
+          <Card.Body>
+            <h2 className="pokemonListName">{pokemon.name}</h2>
+            <NavLink className="pokemonSeeMore" to={`/details/${pokemon.name}`}>
+              see more
+            </NavLink>
+          </Card.Body>
+        </Card>
       </div>
     </div>
   );
