@@ -60,6 +60,8 @@
 
 .homeImage {
   width: 500px; 
+  border: solid 3px #043d73; 
+  border-radius: 5px; 
 }
 
 .titlePokedex {
@@ -78,6 +80,46 @@
 .pokemonName {
   color: #043d73;
   font-weight: 400; 
-  font-size: 25px; 
+  font-size: 50px; 
   margin: 20px; 
+}
+
+.pokemonCard {
+  border: solid 3px #043d73;
+  width: 300px; 
+  justify-content: center;
+  margin: 20px; 
+  border-radius: 5px;
+  background-color: #81BBF3;
+}
+
+.pokemonCardImage {
+  width: 200px; 
+  margin: -20px; 
+}
+
+.pokemonDiscovery {
+  border: solid 3px #043d73; 
+  border-radius: 5px; 
+  width: 500px; 
+  height: 200px; 
+  margin: 10px; 
+}
+
+.pokemonDiscoverCard{
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+}
+
+.pokemonSeeMore {
+  justify-content: center; 
+  color: black; 
+}
+
+.pokemonListName {
+  color: #043d73;
+  font-weight: 400; 
+  font-size: 50px; 
+  margin: 20px;
 }

@@ -46,7 +46,11 @@ function PokemonDetailPage() {
   return pokemonDetails ? (
     <div className="pokemonCard">
       <h2 className="pokemonName">{pokemonDetails.name}</h2>
-      <img src={pokemonDetails.sprites.front_default} alt="front sprite" />
+      <img
+        className="pokemonCardImage"
+        src={pokemonDetails.sprites.front_default}
+        alt="front sprite"
+      />
       <p>
         Types:{" "}
         {pokemonDetails.types.map((typeObj) => (

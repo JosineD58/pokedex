@@ -12,9 +12,13 @@ type Props = {
 
 const PokemonDiscoveryPage = ({ pokemon }: Props) => {
   return (
-    <div className="Pokemon">
-      <h2>{pokemon.name}</h2>
-      <NavLink to={`/details/${pokemon.name}`}>see more</NavLink>
+    <div className="pokemonDiscoverCard">
+      <div className="pokemonDiscovery">
+        <h2 className="pokemonListName">{pokemon.name}</h2>
+        <NavLink className="pokemonSeeMore" to={`/details/${pokemon.name}`}>
+          see more
+        </NavLink>
+      </div>
     </div>
   );
 };
